@@ -34,26 +34,76 @@ main {
     margin: 10px;
 }
 
-/* Container for Portfolio Images */
+
+/* Ensure the entire content is centered on the page */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Ensure the entire content is centered on the page */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Style each figure and ensure same size for all */
 figure {
     display: flex;
-    flex-wrap: wrap;
-    min-width: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     margin: 20px;
     padding: 10px;
     border: 1px solid #ddd;
-    
+    box-sizing: border-box;
+    width: 300px;  /* Fixed width */
+    height: 400px; /* Fixed height */
+    overflow: hidden; /* Prevent overflow */
+    text-align: center; /* Center the content */
 }
 
+/* Image styling to fit within the container */
 figure img {
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
+    width: 100%;
+    height: 60%; /* Let the image take up 60% of the container's height */
+    object-fit: cover; /* Ensure the image covers its container without distortion */
+    border-radius: 5px; /* Optional: rounded corners */
 }
 
+/* Caption styling */
 figure figcaption {
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    max-width: 100%;
+    height: 40%; /* Caption takes up 40% of the container's height */
+    overflow: hidden; /* Prevent text from overflowing */
+    text-overflow: ellipsis; /* Truncate overflowing text with ellipsis */
+    word-wrap: break-word; /* Break long words */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+    div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
 
 /* Footer Styling */
