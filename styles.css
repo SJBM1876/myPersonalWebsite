@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+/* Container for Portfolio Images */
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+}
+
+figure img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+figure figcaption {
+    text-align: center;
+    padding: 5px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Flexbox for Alignment */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+main div {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Margins and Padding */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+p, li {
+    padding: 5px 0;
+}
+
+/* Adding Borders and Shadows */
+article, section, div {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Font Sizes */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p, li {
+    font-size: 1rem;
+}
