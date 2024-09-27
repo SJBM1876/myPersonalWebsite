@@ -109,12 +109,17 @@ figure figcaption {
 
 /* Footer Styling */
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: #fff;
     position: relative;
 }
+
+
 
 /* Flexbox for Alignment */
 nav ul {
