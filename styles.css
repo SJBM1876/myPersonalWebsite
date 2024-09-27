@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    
 }
 
 header {
@@ -112,6 +113,7 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
+    position: relative;
 }
 
 /* Flexbox for Alignment */
